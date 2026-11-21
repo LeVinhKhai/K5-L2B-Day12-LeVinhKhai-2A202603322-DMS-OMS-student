@@ -1,0 +1,5 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S02_ir,IR_sim,"Ảnh IR mô phỏng không thể hiện màu sắc như RGB nhưng vẫn nhận ra người và ghế em bé nhờ hình dạng và độ tương phản; dây an toàn không nổi bật rõ trên vùng thân người",seatbelt,"Không suy đoán từ màu áo; chỉ chọn not_worn nếu xác nhận rõ không có dây, nếu không đủ bằng chứng thì chọn unknown"
+S08_ir,IR_sim,"So với S08_rgb, ảnh IR-sim mất thông tin màu sắc nhưng vẫn giữ được đường nét khuôn mặt và vị trí người ngồi; chưa xác định chắc chắn đặc điểm kính",glasses,"Giữ glasses=unknown khi chưa đủ bằng chứng; không suy đoán loại kính"
+D04,real_IR,"Ảnh NIR thật có độ tương phản mạnh giữa dây an toàn tối màu và áo sáng màu; vùng mắt trái tối nên khó phân biệt trạng thái mí mắt",eye_left,"Giữ eye_left=unknown vì không thấy đủ rõ khe mắt hoặc hai mí khép; không suy đoán trạng thái mắt từ vị trí landmark"
+D06,real_IR,"Ảnh NIR thật không thể hiện màu sắc nhưng vẫn nhận biết được bàn tay mở nhờ đường viền và hình dạng các ngón; bàn tay quan sát được không chạm vô lăng",on_wheel,"Giữ on_wheel=no cho bàn tay đã quan sát; không cần dựa vào màu sắc để xác định vị trí tay"
